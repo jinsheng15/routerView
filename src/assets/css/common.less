@@ -1,0 +1,84 @@
+.main {
+    width: 100%;
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+
+    }
+}
+
+.click-op {
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        opacity: 0.6;
+        user-select: none;
+    }
+}
+
+.more {
+    font-size: 16px;
+    font-weight: bold;
+    height: 22px;
+    line-height: 22px;
+    color: #193B90;
+    text-align: left;
+    padding: 8px 0;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ellipse {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.row2-ellipse {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.row3-ellipse {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.row5-ellipse {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+
+.scale-container {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+
+        transition: all 0.6s ease;
+    }
+
+    &:hover img {
+        transform: scale(1.2);
+    }
+}
